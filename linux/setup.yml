@@ -14,7 +14,7 @@ controller_projects:
   - name: Fact Scan
     organization: Default
     scm_type: git
-    scm_url: 'https://github.com/MaPrey/awx-facts-playbooks.git'
+    scm_url: 'https://github.com/ansible/awx-facts-playbooks.git'
 
 controller_credential_types:
   - name: "Insights Collection"
@@ -38,8 +38,8 @@ controller_credentials:
     credential_type: Insights Collection
     organization: Default
     inputs:
-      insights_user: "evasion29"
-      insights_password: "KA.rJ@L4miL_vQv"
+      insights_user: REPLACEME
+      insights_password: REPLACEME
 
 controller_inventory_sources:
   - name: Insights Inventory
@@ -61,8 +61,8 @@ controller_templates:
     - "Workshop Credential"
     survey_enabled: true
     extra_vars:
-      activation_key: "ansible-demo"
-      org_id: "12715688"
+      activation_key: undef
+      org_id: undef
     survey:
       name: ''
       description: ''
